@@ -1,43 +1,57 @@
 import { Nav, Tab, Row, Col, Container } from "react-bootstrap";
 import ProjectCard from "./ProjectCard";
 import colorSharp2 from "../assets/img/color-sharp2.png";
-import projImg1 from "../assets/img/project-img1.png";
-import projImg2 from "../assets/img/project-img2.png";
-import projImg3 from "../assets/img/project-img3.png";
+import projImg1 from "../assets/img/grow-together.png";
+import projImg2 from "../assets/img/keeper-app.png";
+import projImg3 from "../assets/img/secrets.png";
+import projImg4 from "../assets/img/simon.png";
+import projImg5 from "../assets/img/todo.png";
+import projImg6 from "../assets/img/blog.png";
 import TrackVisibility from "react-on-screen";
-import emailjs from "@emailjs/browser";
 
 function Projects() {
   const projects = [
     {
-      title: "blog",
-      description: "aaaaa",
+      title: "Grow Together",
+      description: "Grow Together is a platform that provides many learning tools such as a habit tracker and Pomodoro timer. I've used Node.js, JavaScript and PassportJS to build this application.",
       imgUrl: projImg1,
+      githubLink: "https://github.com/UmutEkerdiker/grow-together",
+      liveLink: "https://dark-goosebumps-85465.herokuapp.com/"
     },
     {
-      title: "blog",
-      description: "",
+      title: "Keeper App",
+      description: "Keeper App is a Google Keep style note taking application built with React.",
       imgUrl: projImg2,
+      githubLink: "https://github.com/UmutEkerdiker/keeper-app",
+      liveLink: "https://umutekerdiker.github.io/keeper-app/"
     },
     {
-      title: "blog",
-      description: "",
+      title: "Secrets App",
+      description: "Secrets App is a full stack web application that allows users to submit anonymous secrets and view others' secrets. Node.js, JavaScript and EJS were used to build this application.",
       imgUrl: projImg3,
+      githubLink: "https://github.com/UmutEkerdiker/secretsProject",
+      liveLink: "https://serene-tundra-35329.herokuapp.com/"
     },
     {
-      title: "blog",
-      description: "",
-      imgUrl: projImg1,
+      title: "Simon Game",
+      description: "This is a pure JavaScript application. Try to remember the pattern and copy it!",
+      imgUrl: projImg4,
+      githubLink: "https://github.com/UmutEkerdiker/SimonGame",
+      liveLink: "https://umutekerdiker.github.io/SimonGame/"
     },
     {
-      title: "blog",
-      description: "",
-      imgUrl: projImg2,
+      title: "ToDo App",
+      description: "This is a full stack to-do app that allows you to create custom lists by simply changing the URL! Node.js, JavaScript and EJS were used to build this application.",
+      imgUrl: projImg5,
+      githubLink: "https://github.com/UmutEkerdiker/MyToDoList",
+      liveLink: "https://pacific-depths-61031.herokuapp.com/"
     },
     {
-      title: "blog",
-      description: "",
-      imgUrl: projImg3,
+      title: "Blog App",
+      description: "This is a full-stack blog application. Simply go to /compose to create and save new entries! Node.js, JavaScript and EJS were used to build this application.",
+      imgUrl: projImg6,
+      githubLink: "https://github.com/UmutEkerdiker/BlogProject",
+      liveLink: "https://guarded-wave-90697.herokuapp.com/"
     },
   ];
   return (
@@ -69,13 +83,13 @@ function Projects() {
                 id="pills-tab"
               >
                 <Nav.Item>
-                  <Nav.Link eventKey="first">Tab One</Nav.Link>
+                  <Nav.Link eventKey="first">My Projects</Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                  <Nav.Link eventKey="second">Tab 2</Nav.Link>
+                  <Nav.Link eventKey="second">Future Projects</Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                  <Nav.Link eventKey="third">Tab 3</Nav.Link>
+                  <Nav.Link eventKey="third">Future Projects 2</Nav.Link>
                 </Nav.Item>
               </Nav>
               <Tab.Content>
@@ -86,8 +100,8 @@ function Projects() {
                     })}
                   </Row>
                 </Tab.Pane>
-                <Tab.Pane eventKey="second">Lorem Ipsum</Tab.Pane>
-                <Tab.Pane eventKey="third">Lorem Ipsum</Tab.Pane>
+                <Tab.Pane eventKey="second" className="project-text">Contact me for future ideas!</Tab.Pane>
+                <Tab.Pane eventKey="third" className="project-text">Contact me for future ideas!</Tab.Pane>
               </Tab.Content>
             </Tab.Container>
           </Col>

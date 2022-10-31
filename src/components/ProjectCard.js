@@ -1,6 +1,6 @@
-import { Col } from "react-bootstrap";
+import { Col, Button } from "react-bootstrap";
 
-function ProjectCard({ title, description, imgUrl }) {
+function ProjectCard({ title, description, imgUrl, githubLink, liveLink }) {
   return (
     <Col sm={6} md={4}>
       <div className="proj-imgbx">
@@ -9,6 +9,12 @@ function ProjectCard({ title, description, imgUrl }) {
           <h4>{title}</h4>
           <span>{description}</span>
         </div>
+      </div>
+      <div className="proj-buttonbx">
+        <a href={githubLink}><Button variant="light" className="proj-button">
+            <i class="devicon-github-original"> </i>
+          GitHub </Button></a>
+          <a href={liveLink}><Button variant="light" className="proj-button"><i class="devicon-webpack-plain"> </i>Live Site</Button></a>
       </div>
     </Col>
   );
