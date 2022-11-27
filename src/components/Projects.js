@@ -13,45 +13,51 @@ function Projects() {
   const projects = [
     {
       title: "Grow Together",
-      description: "Grow Together is a platform that provides many learning tools such as a habit tracker and Pomodoro timer. I've used Node.js, JavaScript and PassportJS to build this application.",
+      description:
+        "Grow Together is a platform that provides many learning tools such as a habit tracker and Pomodoro timer. I've used Node.js, JavaScript and PassportJS to build this application.",
       imgUrl: projImg1,
       githubLink: "https://github.com/UmutEkerdiker/grow-together",
-      liveLink: "https://dark-goosebumps-85465.herokuapp.com/"
+      liveLink: "https://grow-together.onrender.com",
     },
     {
       title: "Keeper App",
-      description: "Keeper App is a Google Keep style note taking application built with React.",
+      description:
+        "Keeper App is a Google Keep style note taking application built with React.",
       imgUrl: projImg2,
       githubLink: "https://github.com/UmutEkerdiker/keeper-app",
-      liveLink: "https://umutekerdiker.github.io/keeper-app/"
+      liveLink: "https://umutekerdiker.github.io/keeper-app/",
     },
     {
       title: "Secrets App",
-      description: "Secrets App is a full stack web application that allows users to submit anonymous secrets and view others' secrets. Node.js, JavaScript and EJS were used to build this application.",
+      description:
+        "Secrets App is a full stack web application that allows users to submit anonymous secrets and view others' secrets. Node.js, JavaScript and EJS were used to build this application.",
       imgUrl: projImg3,
       githubLink: "https://github.com/UmutEkerdiker/secretsProject",
-      liveLink: "https://serene-tundra-35329.herokuapp.com/"
+      liveLink: "https://secretsproject.onrender.com",
     },
     {
       title: "Simon Game",
-      description: "This is a pure JavaScript application. Try to remember the pattern and copy it!",
+      description:
+        "This is a pure JavaScript application. Try to remember the pattern and copy it!",
       imgUrl: projImg4,
       githubLink: "https://github.com/UmutEkerdiker/SimonGame",
-      liveLink: "https://umutekerdiker.github.io/SimonGame/"
+      liveLink: "https://umutekerdiker.github.io/SimonGame/",
     },
     {
       title: "ToDo App",
-      description: "This is a full stack to-do app that allows you to create custom lists by simply changing the URL! Node.js, JavaScript and EJS were used to build this application.",
+      description:
+        "This is a full stack to-do app that allows you to create custom lists by simply changing the URL! Node.js, JavaScript and EJS were used to build this application.",
       imgUrl: projImg5,
       githubLink: "https://github.com/UmutEkerdiker/MyToDoList",
-      liveLink: "https://pacific-depths-61031.herokuapp.com/"
+      liveLink: "https://mytodolist-94qd.onrender.com",
     },
     {
       title: "Blog App",
-      description: "This is a full-stack blog application. Simply go to /compose to create and save new entries! Node.js, JavaScript and EJS were used to build this application.",
+      description:
+        "This is a full-stack blog application. Simply go to /compose to create and save new entries! Node.js, JavaScript and EJS were used to build this application.",
       imgUrl: projImg6,
       githubLink: "https://github.com/UmutEkerdiker/BlogProject",
-      liveLink: "https://guarded-wave-90697.herokuapp.com/"
+      liveLink: "https://blogproject-oohq.onrender.com",
     },
   ];
   return (
@@ -100,8 +106,12 @@ function Projects() {
                     })}
                   </Row>
                 </Tab.Pane>
-                <Tab.Pane eventKey="second" className="project-text">Contact me for future ideas!</Tab.Pane>
-                <Tab.Pane eventKey="third" className="project-text">Contact me for future ideas!</Tab.Pane>
+                <Tab.Pane eventKey="second" className="project-text">
+                  Contact me for future ideas!
+                </Tab.Pane>
+                <Tab.Pane eventKey="third" className="project-text">
+                  Contact me for future ideas!
+                </Tab.Pane>
               </Tab.Content>
             </Tab.Container>
           </Col>
